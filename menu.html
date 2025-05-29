@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Menu - Delicioso Restaurant</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="Delicioso Logo" class="logo">
+      <h1>Our Menu</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">View Menu</a>
+      
+    </nav>
+  </header>
+
+  <section class="menu-gallery">
+    <h2>Explore Our Delicious Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/1.jpg" alt="Menu Item 1" onclick="openModal(this)" loading="lazy">
+      </div>
+      <div class="menu-item">
+        <img src="images/2.jpg" alt="Menu Item 2" onclick="openModal(this)" loading="lazy">
+      </div>
+      <div class="menu-item">
+        <img src="images/3.jpg" alt="Menu 3" onclick="openModal(this)">
+      </div>
+      <div class="menu-item">
+        <img src="images/4.jpg" alt="Menu 4" onclick="openModal(this)">
+      </div>
+      <div class="menu-item">
+        <img src="images/5.jpg" alt="Menu 5" onclick="openModal(this)">
+      </div>
+      <div class="menu-item">
+        <img src="images/6.jpg" alt="Menu 6" onclick="openModal(this)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for fullscreen view -->
+  <div id="menuModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Delicioso Restaurant. All rights reserved.</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

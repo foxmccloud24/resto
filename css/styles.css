@@ -1,0 +1,308 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #333;
+    color: #f4c842;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #000; /* Black background */
+    color: #f4c842; /* Gold text */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Optional: make the logo circular */
+    object-fit: cover;
+}
+
+nav {
+    position: relative;
+    background-color: #000;
+    color: #f4c842;
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #000;
+    color: #f4c842;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-links a {
+    color: #f4c842;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.menu-links a:hover {
+    color: #fff;
+}
+
+footer {
+    background-color: #000; /* Changed to black */
+    color: #f4c842; /* Gold color for text remains */
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #333; /* Changed to dark gray */
+    color: #f4c842; /* White text remains */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Consistent grid layout */
+    gap: 15px;
+    justify-content: center;
+}
+
+.dish {
+    text-align: center;
+    max-width: 200px;
+}
+
+.menu-item img, .gallery img, .carousel-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img:hover, .gallery img:hover, .carousel-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.description {
+    margin-top: 10px;
+    font-style: italic;
+    color: #f4c842; /* Gold color for descriptions */
+}
+
+.menu article {
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+.testimonials {
+    padding: 20px;
+    background-color: #333; /* Changed to dark gray */
+    color: #f4c842; /* White text for contrast */
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.carousel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 10px;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333; /* Changed to dark gray */
+    color: #f4c842; /* White text for contrast */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #f4c842; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    color: #fff; /* White on hover */
+}
+
+.menu-gallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark gray background */
+    color: #f4c842; /* Gold text */
+}
+
+.menu-gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #f4c842; /* Gold color for the heading */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+    gap: 15px;
+    max-width: 100%; /* Ensure it fits within the screen */
+    margin: 0 auto;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 95%; /* Ensure modal fits smaller screens */
+    max-height: 95%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.modal-content:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.close {
+    position: fixed; /* Fixed position for better visibility */
+    top: 10px;
+    right: 15px;
+    color: #f4c842; /* Gold color for close button */
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Ensure it stays above other elements */
+}
+
+.close:hover {
+    color: #fff; /* White on hover */
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column; /* Stack logo and text on smaller screens */
+    }
+
+    nav a {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid items */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-links.show {
+        display: flex;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
