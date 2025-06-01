@@ -253,6 +253,13 @@ section {
     color: #fff; /* White on hover */
 }
 
+.map-wrapper {
+    background: linear-gradient(to bottom, #333, #555); /* Gradient background */
+    padding: 20px; /* Add padding around the map */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}
+
 .map-container {
     position: relative;
     padding-bottom: 56.25%; /* Aspect ratio 16:9 */
@@ -267,6 +274,7 @@ section {
     width: 100%;
     height: 100%;
     border: 0;
+    border-radius: 8px; /* Match the rounded corners of the container */
 }
 
 @media (max-width: 768px) {
