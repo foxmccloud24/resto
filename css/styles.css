@@ -280,7 +280,12 @@ section {
     }
 
     .menu-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid items */
+        grid-template-columns: 1fr; /* Make each image take the full width */
+    }
+
+    .menu-item img {
+        width: 100%; /* Ensure the image takes up the full width */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .menu-toggle {
